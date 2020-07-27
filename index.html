@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="wecode, 사전스터디 2주차" />
+    <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Exclamation_mark_2.svg/1179px-Exclamation_mark_2.svg.png"
+    />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Exclamation_mark_2.svg/1179px-Exclamation_mark_2.svg.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Plan or Game</title>
+  </head>
+  <body>
+    <div id="whole_container">
+      <div id="head">
+        <div id="btn_container">
+          <div id="todo_btn" class="btn_menu" title="1" onclick="btnStyle()">
+            To do
+          </div>
+          <div id="game_btn" class="btn_menu" title="0" onclick="btnStyle()">
+            Game
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div id="todo_container">
+          <div id="todo_box">
+            <div id="todo_input_container" onkeypress="inputEnter()">
+              <input
+                id="todo_input"
+                type="text"
+                placeholder="해야 할 일을 적어주세요.     (enter)"
+                maxlength="16"
+              />
+            </div>
+            <div id="todo_list">
+              <div id="todo_list_container"></div>
+            </div>
+          </div>
+        </div>
+        <div id="game_container"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
