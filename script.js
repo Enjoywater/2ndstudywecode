@@ -33,6 +33,9 @@ const btnStyle = () => {
 const inputEnter = () => {
   let eTarget = event.target;
   if (event.keyCode === 13) {
+    if (getId(eTarget.id).value === "") {
+      return alert("해야 할 일을 적어주세요.");
+    }
     makeListBox("todo_list_container", eTarget.value);
     getId(eTarget.id).value = "";
   }
